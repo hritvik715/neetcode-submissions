@@ -1,0 +1,24 @@
+class Solution {
+public:
+    bool hasDuplicate(vector<int>& nums) {
+        // brute force
+
+        // for(int i=0 ; i<nums.size() ; i++){
+        //     for(int j =i+1;j<nums.size() ; j++){
+        //         if(nums[i] == nums[j]) return true;
+        //     }
+        // }
+        // return false;
+
+
+
+
+
+        // map 
+        unordered_set<int> x(nums.begin() , nums.end());
+        if(x.size() != nums.size()){
+            return true;
+        }
+        return false;
+    }
+};
